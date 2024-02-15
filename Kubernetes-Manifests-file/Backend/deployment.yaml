@@ -26,7 +26,7 @@ spec:
       containers:
       - name: api
         image: 280047339173.dkr.ecr.us-east-1.amazonaws.com/backend:6
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
           - name: MONGO_CONN_STR
             value: mongodb://mongodb-svc:27017/todo?directConnection=true

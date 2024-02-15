@@ -26,7 +26,7 @@ spec:
       containers:
       - name: frontend
         image: 280047339173.dkr.ecr.us-east-1.amazonaws.com/frontend:2
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
           - name: REACT_APP_BACKEND_URL
             value: "http://backend.kachicares.com/api/tasks"
